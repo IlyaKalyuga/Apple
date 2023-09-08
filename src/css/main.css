@@ -12,11 +12,17 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .wrapper {
   max-width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .header {
@@ -25,6 +31,7 @@ li {
 }
 
 .main {
+  width: 100%;
   flex: 1 1 auto;
   background-color: blue;
 }
@@ -73,10 +80,16 @@ li {
   flex-wrap: wrap;
   column-gap: 4%;
 }
-.nav_item {
+.nav_item a {
   /* margin-right: 4%; */
   font-size: 18px;
   color: #999999;
+  transition: 0.8s;
+}
+
+.nav_item a:hover {
+  color: white;
+  transition: 0.8s;
 }
 
 .header_s_b {
@@ -85,7 +98,232 @@ li {
 }
 
 .header_bag {
-  margin-left: 4%;
+  margin-left: 5%;
   width: 23px;
   height: 23px;
+  cursor: pointer;
+}
+
+.title_and_links {
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product_name {
+  font-size: 26px;
+  flex: 1 1 auto;
+}
+.prd_link {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #999999;
+  font-size: 18px;
+  transition: 0.8s;
+}
+
+.prd_link:hover {
+  color: white;
+  transition: 0.8s;
+}
+
+.byu_title {
+  width: 105px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 13px;
+  background-color: #007dea;
+  color: white;
+  border: none;
+  transition: 0.7s;
+}
+
+.byu_title:active {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.line {
+  max-width: 1440px;
+  height: 2px;
+  background-color: #acacac;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.byu_air_pods {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 137px;
+  flex-wrap: wrap;
+}
+
+.air_pods_pro_cont {
+  max-width: 940px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+.air_pods_pro_img {
+  max-width: 469px;
+  width: 100%;
+  height: 600px;
+}
+
+.air_pods_pro_text {
+  position: absolute;
+  font-size: 165px;
+  font-weight: 900;
+  top: 213px;
+}
+
+.air_pods_pro_cont_but {
+  max-width: 940px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.air_pods_pro_learn {
+  font-size: 18px;
+  transition: 0.8s;
+}
+
+.air_pods_pro_learn:hover {
+  color: #999999;
+  transition: 0.8s;
+}
+
+.air_pods_pro_button {
+  max-width: 165px;
+  width: 165px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  background-color: black;
+  border: 2px #fdfdfd solid;
+  border-radius: 13px;
+  margin-left: 4%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.air_pods_pro_button:active {
+  background-color: white;
+  color: black;
+  transition: 0.7s;
+}
+
+.comfort_container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  flex-wrap: wrap;
+  margin-bottom: 11%;
+}
+
+.comfort_title {
+  font-size: 65px;
+  font-weight: 500;
+  margin: 0 0 43px 0;
+}
+
+.comfort_title_two {
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.comfort_actor_img {
+  max-width: 905px;
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 120px;
+}
+
+.comfort_desc_container {
+  max-width: 100%;
+  width: 100%;
+  height: 610px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.comfort_left_headphone {
+  max-width: 507px;
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+.comfort_text {
+  font-size: 22px;
+  text-align: justify;
+  align-self: flex-end;
+  padding-bottom: 70px;
+  /* width: 539px; */
+  max-width: 426px;
+}
+
+.comfort_right_headphone {
+  max-width: 507px;
+  width: 100%;
+}
+
+.audio_quality_container_full {
+  max-width: 100%;
+  height: 845px;
+  background-color: white;
+  border-radius: 20px 20px 0 20px;
+}
+.audio_quality_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.audio_quality_text_container {
+  max-width: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.audio_quality_title {
+  font-size: 26px;
+  color: black;
+  margin: 0;
+}
+.audio_quality_text {
+  font-size: 73px;
+  color: black;
+  font-weight: 500;
+  margin: 30px 0 0 0;
+}
+.audio_quality_actor {
+  margin-top: 4%;
+  margin-left: 9%;
+  max-width: 596px;
+  width: 100%;
 }
