@@ -12,11 +12,17 @@ li {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 .wrapper {
   max-width: 100%;
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .header {
@@ -25,18 +31,20 @@ li {
 }
 
 .main {
+  width: 100%;
   flex: 1 1 auto;
-  background-color: blue;
 }
 
 .footer {
-  background-color: burlywood;
+  background-color: rgb(0, 0, 0);
   height: 235px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .header_container {
   max-width: 1440px;
-  background-color: red;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -74,10 +82,16 @@ li {
   flex-wrap: wrap;
   column-gap: 4%;
 }
-.nav_item {
+.nav_item a {
   /* margin-right: 4%; */
   font-size: 18px;
   color: #999999;
+  transition: 0.8s;
+}
+
+.nav_item a:hover {
+  color: white;
+  transition: 0.8s;
 }
 
 .header_s_b {
@@ -86,7 +100,817 @@ li {
 }
 
 .header_bag {
-  margin-left: 4%;
+  margin-left: 5%;
   width: 23px;
   height: 23px;
+  cursor: pointer;
+}
+
+.title_and_links {
+  max-width: 1440px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.product_name {
+  font-size: 26px;
+  flex: 1 1 auto;
+}
+.prd_link {
+  margin-right: 40px;
+  text-decoration: none;
+  color: #999999;
+  font-size: 18px;
+  transition: 0.8s;
+}
+
+.prd_link:hover {
+  color: white;
+  transition: 0.8s;
+}
+
+.byu_title {
+  width: 105px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 13px;
+  background-color: #007dea;
+  color: white;
+  border: none;
+  transition: 0.7s;
+}
+
+.byu_title:active {
+  background-color: white;
+  color: black;
+  transition: 0.3s;
+}
+
+.line {
+  max-width: 1440px;
+  height: 2px;
+  background-color: #acacac;
+  margin: 0 auto;
+  margin-bottom: 3%;
+}
+
+.byu_air_pods {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 137px;
+  flex-wrap: wrap;
+}
+
+.air_pods_pro_cont {
+  max-width: 940px;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+  margin-bottom: 3%;
+}
+
+.air_pods_pro_img {
+  max-width: 469px;
+  width: 100%;
+  height: 600px;
+}
+
+.air_pods_pro_text {
+  position: absolute;
+  font-size: 165px;
+  font-weight: 900;
+  top: 213px;
+}
+
+.air_pods_pro_cont_but {
+  max-width: 940px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.air_pods_pro_learn {
+  font-size: 18px;
+  transition: 0.8s;
+}
+
+.air_pods_pro_learn:hover {
+  color: #999999;
+  transition: 0.8s;
+}
+
+.air_pods_pro_button {
+  max-width: 165px;
+  width: 165px;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  background-color: black;
+  border: 2px #fdfdfd solid;
+  border-radius: 13px;
+  margin-left: 4%;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.air_pods_pro_button:active {
+  background-color: white;
+  color: black;
+  transition: 0.7s;
+}
+
+.comfort_container {
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 11%;
+}
+
+.comfort_title {
+  font-size: 65px;
+  font-weight: 500;
+  margin: 0 0 43px 0;
+}
+
+.comfort_title_two {
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.comfort_actor_img {
+  max-width: 905px;
+  width: 100%;
+  margin-top: 22px;
+  margin-bottom: 120px;
+}
+
+.comfort_desc_container {
+  max-width: 100%;
+  width: 100%;
+  height: 610px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.comfort_left_headphone {
+  max-width: 507px;
+  width: 100%;
+  transform: scaleX(-1);
+}
+
+.comfort_text {
+  font-size: 22px;
+  text-align: justify;
+  align-self: flex-end;
+  padding-bottom: 70px;
+  /* width: 539px; */
+  max-width: 426px;
+}
+
+.comfort_right_headphone {
+  max-width: 507px;
+  width: 100%;
+}
+
+.audio_quality_container_full {
+  max-width: 100%;
+  height: 845px;
+  background-color: white;
+  border-radius: 20px 20px 0 20px;
+}
+.audio_quality_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.audio_quality_text_container {
+  max-width: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.audio_quality_title {
+  font-size: 26px;
+  color: black;
+  margin: 0;
+}
+.audio_quality_text {
+  font-size: 73px;
+  color: black;
+  font-weight: 500;
+  margin: 30px 0 0 0;
+}
+.audio_quality_actor {
+  margin-top: 4.1%;
+  margin-left: 9%;
+  max-width: 596px;
+  width: 100%;
+}
+
+.ambroschure_container {
+  max-width: 1440px;
+  width: 100%;
+  height: 820px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 7%;
+  position: relative;
+  margin-top: 301px;
+}
+
+.ambroschure_container_img {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.text_ambroschure_conteiner {
+  max-width: 467px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40%;
+}
+
+.text_ambroschure {
+  height: 114px;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.ambroschure_l {
+  max-width: 100%;
+}
+
+.ambroschure_r {
+  max-width: 100%;
+}
+
+.ambroschure_first_txt {
+  margin-bottom: 63px;
+}
+
+.active_noise_cancellation_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.active_noise_small_title {
+  font-size: 26px;
+  margin: 0 0 47px 0;
+}
+
+.active_noise_big_title {
+  font-size: 65px;
+  font-weight: 500;
+  margin: 0 0 234px 0;
+}
+.active_noise_txt_container {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 44px;
+}
+
+.active_noise_txt {
+  max-width: 466px;
+  width: 100%;
+  font-size: 26px;
+  text-align: justify;
+  margin: 0;
+}
+
+.active_noise_txt_one {
+  align-self: flex-start;
+}
+
+.active_noise_txt_two {
+  align-self: flex-end;
+}
+
+.active_noise_image {
+  max-width: 1440px;
+  width: 100%;
+  max-height: 572px;
+  margin-bottom: 100px;
+}
+
+.active_noise_bottom_txt {
+  max-width: 488px;
+  width: 100%;
+  font-size: 26px;
+  text-align: justify;
+  margin: 0 0 254px 0;
+}
+
+.specifications_text {
+  font-size: 65px;
+  font-weight: 500;
+}
+
+.specifications_container_full {
+  max-width: 100%;
+  height: 1325px;
+  background-color: white;
+  border-radius: 20px 20px 0 20px;
+  position: relative;
+  margin-bottom: 6%;
+}
+
+.specifications_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.specifications_imgg_txxt_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.specifications_headphone_container {
+  max-width: 347px;
+  width: 100%;
+  max-height: 786px;
+  position: relative;
+  z-index: 99;
+}
+
+.specifications_text_container {
+  max-width: 1053px;
+  width: 100%;
+  padding: 20px;
+}
+
+.specifications_text_item {
+  color: black;
+  font-size: 26px;
+  text-align: justify;
+  max-width: 488px;
+  width: 100%;
+  text-indent: 16px;
+}
+
+.specifications_headphone_img {
+  position: absolute;
+  max-width: 347px;
+  width: 100%;
+  max-height: 563px;
+  height: 100%;
+  top: -60px;
+}
+
+.txt_itm_1 {
+  margin-right: auto;
+  margin-bottom: 80px;
+  margin-top: 200px;
+}
+
+.txt_itm_2 {
+  margin-left: auto;
+  margin-bottom: 120px;
+}
+
+.txt_itm_3 {
+  margin-right: auto;
+  padding-left: 127px;
+}
+
+.specifications_line_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 214px;
+  display: flex;
+  align-items: center;
+}
+
+.specifications_line {
+  width: 214px;
+  height: 2px;
+  background-color: black;
+  transform: rotate(100deg);
+  margin-left: auto;
+  margin-right: 528px;
+}
+
+.specifications_earpiece_in_disassembly {
+  max-width: 746px;
+  width: 100%;
+  max-height: 490px;
+  position: absolute;
+  bottom: -85px;
+}
+
+.charge_wirelessly_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  /* height: 188vh; */
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.charge_wirelessly_text_container_1 {
+  max-width: 466px;
+  width: 100%;
+  height: 268px;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  align-self: flex-start;
+  margin-left: 5%;
+  margin-bottom: 1%;
+}
+
+.charge_text {
+  font-size: 26px;
+}
+
+.c_t_1 {
+  margin-bottom: 60px;
+  text-indent: 17px;
+}
+
+.charge_line_1 {
+  width: 214px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(50deg);
+  margin-left: 57%;
+}
+
+.charge_wirelessly_image {
+  margin-bottom: 230px;
+  max-width: 954px;
+  width: 100%;
+  height: auto;
+}
+
+.charge_wirelessly_text_container_2 {
+  max-width: 466px;
+  width: 100%;
+  height: 278px;
+  display: flex;
+  flex-direction: column-reverse;
+  text-align: justify;
+  align-self: flex-end;
+  position: absolute;
+  top: 46%;
+  right: 2%;
+}
+
+.c_t_2 {
+  margin-top: 70px;
+  text-indent: 32px;
+}
+
+.charge_wirelessly_small_title {
+  font-size: 26px;
+  margin: 43px 0 0 0;
+}
+
+.charge_wirelessly_big_title {
+  font-size: 65px;
+  font-weight: 500;
+  margin: 0 0 18px 0;
+}
+
+.charge_line_2 {
+  width: 214px;
+  height: 2px;
+  background-color: white;
+  transform: rotate(50deg);
+  margin-left: -148px;
+}
+
+.use_tirelessly_container {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.use_tirelessly_image {
+  width: 100%;
+  height: auto;
+}
+
+.use_tirelessly_text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40px;
+  z-index: 2;
+  color: black;
+  font-size: 65px;
+  font-weight: 900;
+}
+
+.characteristics_container {
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 200px;
+}
+
+.characteristics_items {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.charact_text_1 {
+  font-size: 26px;
+  margin-bottom: 70px;
+}
+
+.text_chrt_cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 73px;
+  height: 73px;
+  margin-bottom: 30px;
+}
+
+.c_t_text_h {
+  font-size: 65px;
+  margin-right: 5px;
+}
+
+.c_t_text_d {
+  font-size: 32px;
+  margin-top: 55px;
+}
+
+.chrt_text_2 {
+  font-size: 26px;
+  text-align: center;
+}
+
+.buy_container_main {
+  max-width: 1440px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  /* margin-top: 200px; */
+  margin-top: 143px;
+}
+
+.small_buy_con_title {
+  font-size: 26px;
+  margin: 0;
+}
+
+.big_buy_cont_title {
+  font-size: 65px;
+  font-weight: 900;
+  text-align: center;
+  margin: 53px 0 140px 0;
+}
+
+.product_buy_item_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.product_pic_container {
+  max-width: 353px;
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: flex-end;
+  margin: 0 0 75px 0;
+}
+
+.product_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_pic {
+  width: auto;
+  height: auto;
+}
+
+.product_name {
+  font-size: 26px;
+  margin: 0 0 32px 0;
+}
+
+.product_desc {
+  font-size: 18px;
+  margin: 0 0 70px 0;
+}
+
+.product_price {
+  font-size: 45px;
+  font-weight: 900;
+  margin: 0 0 38px 0;
+}
+
+.product_btn {
+  max-width: 165px;
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-size: 18px;
+  background-color: black;
+  border: 2px #fdfdfd solid;
+  border-radius: 13px;
+  margin-left: 4%;
+  cursor: pointer;
+  transition: 0.7s;
+  margin: 0 0 30px 0;
+}
+
+.product_btn:active {
+  background-color: white;
+  color: black;
+  transition: 0.7s;
+}
+
+.product_link {
+  transition: 0.8s;
+  color: #007dea;
+}
+
+.product_link:hover {
+  color: #999999;
+  transition: 0.8s;
+}
+
+.questions_left_title {
+  font-size: 65px;
+  font-weight: 900;
+  margin: 160px 0 55px 0;
+}
+
+.full_contact_continer {
+  max-width: 100%;
+  height: auto;
+  background-color: white;
+  border-radius: 20px 20px 0 20px;
+  color: black;
+}
+
+.contact_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact_title {
+  font-size: 65px;
+  font-weight: 900;
+  text-align: center;
+  margin: 56px 0 142px 0;
+}
+
+.contact_container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_container label {
+  margin: 0 0 19px 0;
+  font-size: 18px;
+}
+
+.contact_container input {
+  width: 469px;
+  height: 51px;
+  margin: 0 0 32px 0;
+  border-radius: 11px;
+  font-size: 18px;
+}
+
+#fname {
+  padding: 0 0 0 26px;
+}
+
+#form_bt {
+  max-width: 165px;
+  width: 100%;
+  height: 50px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+  border: 2px #000000 solid;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: 0.7s;
+  margin: 45px 0 93px 0;
+  align-self: center;
+}
+
+.footer_main_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-arounds;
+  height: 45px;
+}
+
+.link_container {
+  max-width: 504px;
+  width: 100%;
+  height: 45px;
+}
+
+.footer_container_text {
+  max-width: 401px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_text {
+  font-size: 18px;
+  margin: 0 0 0 0;
+}
+
+.social_container {
+  max-width: 536px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.s_c {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 16px;
+  cursor: pointer;
 }

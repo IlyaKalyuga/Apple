@@ -7,8 +7,11 @@
     <link rel="shortcut icon" href="/assets/img/apple_icon_site.png" type="image/x-icon" />
     <link rel="stylesheet" href="/src/css/main.css" />
     <script src="/src/js/main,js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,regular,500,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/src/css/intlTelInput.css" />
     <script src="https://kit.fontawesome.com/dff430b1d3.js" crossorigin="anonymous"></script>
+    <script src="/src/js/intlTelInput.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   </head>
   <body>
     <div class="wrapper">
@@ -19,25 +22,224 @@
           </a>
           <nav class="header_nav_container">
             <ul class="nav_items">
-              <li class="nav_item">Store</li>
-              <li class="nav_item">Mac</li>
-              <li class="nav_item">iphone</li>
-              <li class="nav_item">iPad</li>
-              <li class="nav_item">Watch</li>
-              <li class="nav_item">AirPods</li>
-              <li class="nav_item">TV & Home</li>
-              <li class="nav_item">Only on Apple</li>
-              <li class="nav_item">Accessories</li>
-              <li class="nav_item">Support</li>
+              <li class="nav_item"><a href="">Store</a></li>
+              <li class="nav_item"><a href="">Mac</a></li>
+              <li class="nav_item"><a href="">iphone</a></li>
+              <li class="nav_item"><a href="">iPad</a></li>
+              <li class="nav_item"><a href="">Watch</a></li>
+              <li class="nav_item"><a href="">AirPods</a></li>
+              <li class="nav_item"><a href="">TV & Home</a></li>
+              <li class="nav_item"><a href="">Only on Apple</a></li>
+              <li class="nav_item"><a href="">Accessories</a></li>
+              <li class="nav_item"><a href="">Support</a></li>
             </ul>
           </nav>
           <div class="header_s_b"></div>
-          <i class="fas fa-search fa-25px" style="color: #ffffff"></i>
+          <i class="fas fa-search fa-25px" style="color: #ffffff; margin-left: 4%; cursor: pointer"></i>
           <img src="/assets/img/bag.png" alt="" class="header_bag" />
         </div>
       </header>
-      <main class="main"></main>
-      <footer class="footer"></footer>
+      <main class="main">
+        <div class="title_and_links">
+          <h3 class="product_name">AirPods Pro</h3>
+          <a href="" class="prd_link">Tech Specs</a>
+          <a href="" class="prd_link">Compare</a>
+          <button class="byu_title">Buy Now</button>
+        </div>
+        <h6 class="line"></h6>
+        <div class="byu_air_pods">
+          <div class="air_pods_pro_cont">
+            <img src="/assets/img/AirPods_Pro.png" alt="AirPods Pro" class="air_pods_pro_img" />
+            <p class="air_pods_pro_text">AirPods Pro</p>
+          </div>
+          <div class="air_pods_pro_cont_but">
+            <a href="" class="air_pods_pro_learn">Learn more</a>
+            <button class="air_pods_pro_button">Buy Now</button>
+          </div>
+        </div>
+        <div class="comfort_container">
+          <h1 class="comfort_title">Magic like you've never heard</h1>
+          <img src="/assets/img/actor_comfort.png" alt="" class="comfort_actor_img" />
+          <h1 class="comfort_title_two">Comfort</h1>
+          <div class="comfort_desc_container">
+            <img src="/assets/img/left_headphone.png" alt="" class="comfort_left_headphone" />
+            <p class="comfort_text">
+              We have redesigned the ergonomics of comfort, resulting in a new category of in-ear headphones with an amazing seal for active noise cancellation. You won't just hear
+              music; you'll also feel it.
+            </p>
+            <img src="/assets/img/left_headphone.png" alt="" class="comfort_right_headphone" />
+          </div>
+        </div>
+        <div class="audio_quality_container_full">
+          <div class="audio_quality_container">
+            <div class="audio_quality_text_container">
+              <h6 class="audio_quality_title">Audio Quality</h6>
+              <p class="audio_quality_text">Everything you hear is unheared of</p>
+            </div>
+            <img src="/assets/img/actor_audio_quality.png" alt="" class="audio_quality_actor" />
+          </div>
+        </div>
+        <div class="ambroschure_container">
+          <div class="ambroschure_container_img">
+            <img class="ambroschure_l" src="/assets/img/earphone_with_the_left_emboss_removed.png" alt="earphone_with_the_left_emboss_removed" />
+            <img class="ambroschure_r" src="/assets/img/earphone_with_the_right _emboss_removed.png" alt="earphone with the right emboss removed" />
+          </div>
+          <div class="text_ambroschure_conteiner">
+            <p class="text_ambroschure ambroschure_first_txt">
+              Choose from three sizes of soft, flexible silicone tips that click into place. Find the best fit-and get the best sound-by using the Ear Tip Fit Test.
+            </p>
+            <p class="text_ambroschure">
+              These internally tapered tips confirm to your ear shape, keeping Airpods Pro secure. Andwith vents helping equalize pressure, you feel like there's nothing in your
+              ears.
+            </p>
+          </div>
+        </div>
+        <div class="active_noise_cancellation_container">
+          <h6 class="active_noise_small_title">Active Noise Cancellation</h6>
+          <h1 class="active_noise_big_title">Sounds That Cut The Noise</h1>
+          <div class="active_noise_txt_container">
+            <p class="active_noise_txt_one active_noise_txt">An outward-facing microphone detects external sound</p>
+            <p class="active_noise_txt_two active_noise_txt">AirPods Pro then counter it with equal anti-noise, cancelling the external sound before you hear it</p>
+          </div>
+          <img src="/assets/img/Active_Noise_Cancellation_img.png" alt="Active Noise Cancellation" class="active_noise_image" />
+          <span class="active_noise_bottom_txt">An inward-facing microphone listens inside your ear for unwanted sound, which is also eliminated with anti-noise</span>
+          <h1 class="specifications_text">Specifications</h1>
+        </div>
+        <div class="specifications_container_full">
+          <div class="specifications_container">
+            <div class="specifications_imgg_txxt_container">
+              <div class="specifications_headphone_container">
+                <img class="specifications_headphone_img" src="/assets/img/Specifications_headphone.png" alt="Specifications headphone" />
+              </div>
+              <div class="specifications_text_container">
+                <p class="specifications_text_item txt_itm_1">
+                  The amplifer powers the speaker driver to remove background noise and works with th H1 chip to control listening levels.
+                </p>
+                <p class="specifications_text_item txt_itm_2">
+                  A super-efficifient high dynamic range amplifier produces pure, incredibly clear sound while also extending battery life.
+                </p>
+                <p class="specifications_text_item txt_itm_3">
+                  The Apple-deigned H1 chip employs 10 audio cores, creating incredbly low audio processing latency that enables real-time noise cancellation.
+                </p>
+              </div>
+            </div>
+            <div class="specifications_line_container">
+              <h6 class="specifications_line"></h6>
+            </div>
+            <img class="specifications_earpiece_in_disassembly" src="/assets/img/Specifications_earpiece_in_disassembly.png" alt="Specifications earpiece in disassembly" />
+          </div>
+        </div>
+        <div class="charge_wirelessly_container">
+          <div class="charge_wirelessly_text_container_1">
+            <p class="charge_text c_t_1">Powerfull bass is delivered by a custom- built high -excursion, low- distortion speaker driver.</p>
+            <h6 class="charge_line_1"></h6>
+          </div>
+          <img class="charge_wirelessly_image" src="/assets/img/charge_wirelessly_img.png" alt="Charge Wirelessly Image" />
+          <div class="charge_wirelessly_text_container_2">
+            <p class="charge_text c_t_2">An inward-facing microphone hears sound as you do. Airpods Pro then fine-tune the audio by adjusting the mid and low frequencies.</p>
+            <h6 class="charge_line_2"></h6>
+          </div>
+          <h6 class="charge_wirelessly_small_title">Battery</h6>
+          <h1 class="charge_wirelessly_big_title">Charge wirelessly</h1>
+        </div>
+        <div class="use_tirelessly_container">
+          <img class="use_tirelessly_image" src="/assets/img/Use_tirelessly.png" alt="Use tirelessly" />
+          <p class="use_tirelessly_text">Use tirelessly</p>
+        </div>
+        <div class="characteristics_container">
+          <div class="characteristics_items chr_it_1">
+            <p class="charact_text_1">More than</p>
+            <div class="text_chrt_cont">
+              <p class="c_t_text_h">24</p>
+              <p class="c_t_text_d">hrs</p>
+            </div>
+            <p class="chrt_text_2">of listening time with multiple additional charges in the case</p>
+          </div>
+          <div class="characteristics_items chr_it_2">
+            <p class="charact_text_1">Upto</p>
+            <div class="text_chrt_cont">
+              <p class="c_t_text_h">4.5</p>
+              <p class="c_t_text_d">hrs</p>
+            </div>
+            <p class="chrt_text_2">of listening time on one charge</p>
+          </div>
+          <div class="characteristics_items chr_it_3">
+            <p class="charact_text_1">Around</p>
+            <div class="text_chrt_cont">
+              <p class="c_t_text_h">1</p>
+              <p class="c_t_text_d">hrs</p>
+            </div>
+            <p class="chrt_text_2">of listening time on only 5 mintues of charging</p>
+          </div>
+        </div>
+        <div class="buy_container_main">
+          <h6 class="small_buy_con_title">Shop Now</h6>
+          <h1 class="big_buy_cont_title">Which AirPods are Right <br />For You?</h1>
+          <div class="product_buy_item_container">
+            <div class="product_item">
+              <div class="product_pic_container"><img src="/assets/img/Airpods_pic.png" alt="Airpods" class="product_pic" /></div>
+              <h6 class="product_name">Airpods</h6>
+              <p class="product_desc">2nd Genration</p>
+              <p class="product_price">$129</p>
+              <button class="product_btn">Buy</button>
+              <a href="" class="product_link">Learn more ></a>
+            </div>
+            <div class="product_item">
+              <div class="product_pic_container"><img src="/assets/img//Airpods_Pro_pic.png" alt="Airpods Pro" class="product_pic" /></div>
+              <h6 class="product_name">Airpods Pro</h6>
+              <p class="product_desc">3rd Genration</p>
+              <p class="product_price">$329</p>
+              <button class="product_btn">Buy</button>
+              <a href="" class="product_link">Learn more ></a>
+            </div>
+            <div class="product_item">
+              <div class="product_pic_container"><img src="/assets/img/Airpods_Ace_pic.png" alt="Airpods Ace" class="product_pic" /></div>
+              <h6 class="product_name">Airpods Ace</h6>
+              <p class="product_desc">2nd Genration</p>
+              <p class="product_price">$229</p>
+              <button class="product_btn">Buy</button>
+              <a href="" class="product_link">Learn more ></a>
+            </div>
+          </div>
+          <h1 class="questions_left_title">Questions Left?</h1>
+        </div>
+        <div class="full_contact_continer">
+          <div class="contact_container">
+            <h1 class="contact_title">We will be happy to call you <br />back and consult you</h1>
+            <form>
+              <label for="fname">Your Name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" />
+              <label for="phone">Your Phone</label>
+              <input id="phone" name="phone" type="tel" />
+              <button type="submit" id="form_bt">Send</button>
+            </form>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer_main_container">
+          <div class="link_container">
+            <a href=""><img src="/assets/img/apple_footer_logo.png" alt="apple logo" class="fotter_logo" /></a>
+          </div>
+          <div class="footer_container_text">
+            <p class="footer_text">Senior UI/UX Designer - Design By Tariq Ahmed</p>
+          </div>
+          <div class="social_container">
+            <div class="s_c"><img src="/assets/img/facebook.png" alt="facebook" class="social_pic" /></div>
+            <div class="s_c"><img src="/assets/img/twitter.png" alt="twitter" class="social_pic" /></div>
+            <div class="s_c"><img src="/assets/img/linkedin.png" alt="linkedin" class="social_pic" /></div>
+            <div class="s_c"><img src="/assets/img/instagram.png" alt="instagram" class="social_pic" /></div>
+          </div>
+        </div>
+      </footer>
+
+      <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+          utilsScript: "/src/js/utils.js",
+        });
+      </script>
     </div>
   </body>
 </html>
